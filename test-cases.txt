@@ -1,0 +1,49 @@
+ID: TC_UI_001
+Title: Book a room with valid data
+
+Preconditions:
+User is on the home page
+Rooms are available for selected dates
+
+Steps:
+1. Select valid check-in and check-out dates
+2. Click "Check Availability"
+3. Select any available room (e.g., "Single")
+4. Click "Book Now"
+5. Verify selected dates are displayed correctly on the room page
+6. Click "Reserve Now"
+7. Fill in valid data:
+    - First Name (e.g., "John")
+    - Last Name (e.g., "Doe")
+    - Email (e.g., "john@gmail.com")
+    - Phone (e.g., "12345678900")
+8. Click "Reserve Now"
+
+Expected Result:
+1. Message "Booking Confirmed" is displayed
+2. Selected dates are shown correctly in the confirmation
+
+
+ID: TC_UI_002
+Title: Attempt to book a room with invalid email
+
+Preconditions:
+User is on the home page
+Rooms are available for selected dates
+
+Steps:
+1. Select valid check-in and check-out dates
+2. Click "Check Availability"
+3. Select any available room (e.g., "Single")
+4. Click "Book Now"
+5. Fill in data:
+    - First Name (e.g., "John")
+    - Last Name (e.g., "Doe")
+    - Invalid email (e.g., "johngmail.com")
+    - Phone (e.g., "12345678900")
+6. Click "Reserve Now"
+
+Expected Result:
+1. Error message "must be a well-formed email address" is displayed
+2. Booking is not confirmed
+
